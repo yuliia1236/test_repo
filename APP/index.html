@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/js.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="topLeftContainer">
+            <select>
+                <option>eur</option>
+                <option>usd</option>
+                <option>uan</option>
+            </select>
+            <select class="secondChild">
+                <option>eng</option>
+                <option>рус</option>
+                <option>укр</option>
+            </select>
+            <select>
+                <option>help</option>
+                <option>call</option>
+            </select>
+        </div>
+        <div class="topRightContainer">
+            <div><i class="fas fa-user"></i><a href="#">login</a></div>
+            <div><i class="fas fa-lock"></i><a href="#">register</a></div>
+            <div><i class="fas fa-bars"></i></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="phoneContainer">
+            <i class="fas fa-mobile-alt"></i>
+            <a href="tel:0991800928">0991800928</a>
+        </div>
+        <div class="logoContainer">
+            <img src="IMG/emblem.png" alt="logo">
+        </div>
+        <div class="cartContainer">
+            <i class="fas fa-shopping-basket"></i>
+            <a href="#" class="quantityGood">0</a>
+        </div>
+    </div>
+    <nav class="bottom">
+        <div class="searchContainer">
+            <div class="selectContainer">
+                <i class="fas fa-list-ul"></i>
+                <select>
+                    <option>select a category</option>
+                </select>
+            </div>
+            <div class="searchSubContainer">
+                <input type="text" placeholder="Search products..."><i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div class="menuContainer">
+            <ul class="menu">
+                <li><a href="#" class="linkMenu">home</a></li>
+                <li><a href="#" class="linkMenu">furniture</a></li>
+                <li><a href="#" class="linkMenu">chair</a></li>
+                <li><a href="#" class="linkMenu">table</a></li>
+                <li><a href="#" class="linkMenu">sofa</a></li>
+                <li><a href="#" class="linkMenu">bedroom</a></li>
+                <li><a href="#" class="linkMenu">blog</a></li>
+            </ul>
+            <div class="menuForAdapt" onclick="menuOpen()">
+                <div class="menuTop stick"></div>
+                <div class="menuMiddle stick"></div>
+                <div class="menuBottom stick"></div>
+            </div>
+        </div>
+
+    </nav>
+</header>
+<section class="slidersBlock">
+    <div class="leftSliderContainer">
+        <div class="cartAndTimerContainer">
+            <a href="#" class="addToCart"><i class="fas fa-shopping-basket"></i><p>add to cart</p></a>
+            <div class="timerContainer">
+                <div class="timerCircles"><p class="timeLeft"></p><p>days</p></div>
+                <div class="timerCircles"><p class="timeLeft"></p><p>hrs</p></div>
+                <div class="timerCircles"><p class="timeLeft"></p><p>mins</p></div>
+                <div class="timerCircles"><p class="timeLeft"></p><p>secs</p></div>
+            </div>
+        </div>
+        <div class="topPartSlider">
+            <a href="#">hot deals</a>
+            <div class="circlesSliderLeftContainer">
+                <div class="circlesSliderLeft"></div>
+                <div class="circlesSliderLeft"></div>
+                <div class="circlesSliderLeft"></div>
+            </div>
+        </div>
+        <div class="sliderContainer">
+            <div class="middleContainer">
+                <div class="imgContainer">
+                    <img src="IMG/ForLeftSlider.png" alt="slider image" class="sliderImage">
+                </div>
+                <div class="starsAndNameContainer">
+                    <a href="#">Aenean Ru Bristique</a>
+                    <div class="starsContainer">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="middleContainer">
+                <div class="imgContainer">
+                    <img src="IMG/forLeftSliderBlack.png" alt="slider image" class="sliderImage">
+                </div>
+                <div class="starsAndNameContainer">
+                    <a href="#">Aenean Ru Bristique</a>
+                    <div class="starsContainer">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="middleContainer showing">
+                <div class="imgContainer">
+                    <img src="IMG/forLeftSliderBlood.png" alt="slider image" class="sliderImage">
+                </div>
+                <div class="starsAndNameContainer">
+                    <a href="#">Aenean Ru Bristique</a>
+                    <div class="starsContainer">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomPartSlider">
+            <div class="someButtonsActions">
+                <div class="leftButtonsContainer">
+                    <a href="#" class="leftButtons"><i class="far fa-eye"></i></a>
+                    <a href="#" class="leftButtons"><i class="far fa-heart"></i></a>
+                    <a href="#" class="leftButtons"><i class="fas fa-exchange-alt"></i></a>
+                </div>
+                <div class="rightButtonsActions">
+                    <a href="#" class="oldPrice"><p>$350.00</p></a>
+                    <a href="#" class="price"><p>$300.00</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightSliderContainer">
+        <div class="bgImgContainer showing" id="slide_1">
+            <div class="sliderTextContainer">
+                <div class="topTextContainer">
+                    <h2>indoor <h1>furniture</h1></h2>
+                </div>
+                <p>save up to 50% of all furniture</p>
+                <a href="#" class="shopNowButton"><p>shop now</p></a>
+            </div>
+        </div>
+        <div class="bgImgContainer" id="slide_2">
+            <div class="sliderTextContainer">
+                <div class="topTextContainer">
+                    <h2>indoor <h1>furniture</h1></h2>
+                </div>
+                <p>save up to 50% of all furniture</p>
+                <a href="#" class="shopNowButton"><p>shop now</p></a>
+            </div>
+        </div>
+        <div class="bgImgContainer" id="slide_3">
+            <div class="sliderTextContainer">
+                <div class="topTextContainer">
+                    <h2>indoor <h1>furniture</h1></h2>
+                </div>
+                <p>save up to 50% of all furniture</p>
+                <a href="#" class="shopNowButton"><p>shop now</p></a>
+            </div>
+        </div>
+        <div class="arrowsContainer">
+            <a class="arrows" onclick="previous()"><i class="fas fa-angle-left"></i></a>
+            <a class="arrows" onclick="next()"><i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+</section>
+<section class="featuresBlock">
+    <div class="blocksContainer">
+        <a href="#" class="rectangleBlocks">
+            <div class="bigRoundBlocks">
+                <div class="smallRoundBlocks"><i class="fas fa-truck"></i></div>
+            </div>
+            <div class="textInBlocks">
+                <h1>free shipping</h1>
+                <p>all order</p>
+            </div>
+        </a>
+        <a href="#" class="rectangleBlocks">
+            <div class="bigRoundBlocks">
+                <div class="smallRoundBlocks"><i class="fas fa-headphones"></i></div>
+            </div>
+            <div class="textInBlocks">
+                <h1>24/7 customer</h1>
+                <p>support</p>
+            </div>
+        </a>
+        <a href="#" class="rectangleBlocks">
+            <div class="bigRoundBlocks">
+                <div class="smallRoundBlocks"><i class="fas fa-dollar-sign"></i></div>
+            </div>
+            <div class="textInBlocks">
+                <h1>money back</h1>
+                <p>guarantee</p>
+            </div>
+        </a>
+        <a href="#" class="rectangleBlocks">
+            <div class="bigRoundBlocks">
+                <div class="smallRoundBlocks"><i class="fas fa-bullhorn"></i></div>
+            </div>
+            <div class="textInBlocks">
+                <h1>member discount</h1>
+                <p>first oredr</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="newFurnitureBlock">
+    <div class="newFurnitureMenuContainer">
+        <div class="newFurnitureMenu">
+            <div class="newFurnitureText"><p>new furniture</p></div>
+            <div class="newFurnitureMenuListContainer">
+                <ul class="newFurnitureMenuList">
+                    <li><a href="#" class="newFurnitureMenuLink">bed</a></li>
+                    <li><a href="#" class="newFurnitureMenuLink">chair</a></li>
+                    <li><a href="#" class="newFurnitureMenuLink">sofa</a></li>
+                    <li><a href="#" class="newFurnitureMenuLink">table</a></li>
+                    <li><a href="#" class="newFurnitureMenuLink">dining</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="newFurnitureLineAndDots">
+            <div class="newFurnitureLineContainer">
+                <div class="newFurnitureLongLine">
+                    <div class="newFurnitureShortLine"></div>
+                </div>
+            </div>
+            <div class="newFurnitureDotsContainer">
+                <div class="newFurnitureDots"></div>
+                <div class="newFurnitureDots"></div>
+                <div class="newFurnitureDots"></div>
+            </div>
+        </div>
+    </div>
+    <div class="newFurnitureContainer">
+
+    </div>
+</section>
+</body>
+</html>
